@@ -10,6 +10,7 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
+    padding: 2rem 15% 0 15%;
 }
 
 .resume {
@@ -20,21 +21,52 @@ body {
     position: relative;
 }
 
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+    padding-left: 3rem;
+}
+
+.links a {
+    display: inline-block;
+    color: #002a56;
+    font-size: 1.05rem;
+    text-decoration: none;
+    margin-bottom: 0.6rem;
+    transition: color 0.2s;
+    vertical-align: middle;
+}
+
+.links a:hover {
+    color: #1a73e8;
+    /* text-decoration: underline; */
+}
+
+.links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 .left {
     color: #333;
     padding: 4rem 0;
-    width: 40%;
+    /* width: 40%; */
+    width: 300px;
     text-align: right;
     position: relative;
+
+    margin-right: 2rem;
 }
 
-.left img {
+#me {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
 }
 
 .right h1 {
@@ -47,10 +79,10 @@ body {
     height: 70px;
 }
 
-.right {
-    padding: 2rem;
-    max-width: 45%;
-}
+/* .email {
+    padding-left: 2.2rem;
+    margin-top: 1rem
+} */
 
 .section {
     margin-bottom: 2rem;
@@ -140,6 +172,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .links {
+        padding-left: 35%;
+        align-items: flex-start;
+    }
+
     .left {
         color: #e5e5e5;
         background-color: #dde8ee;
