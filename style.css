@@ -97,7 +97,7 @@ body {
 
 .section p,
 .section ul {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     line-height: 1.5;
 }
 
@@ -137,7 +137,7 @@ body {
 
 .project-header {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 .project a {
@@ -151,7 +151,8 @@ body {
     text-decoration: none;
 }
 
-.project-description {
+p.project-description {
+    font-size: 1rem;
     margin-top: 0.5rem;
     color: #4a5568;
 }
@@ -171,7 +172,35 @@ body {
     border-radius: 4px;
 }
 
-@media (max-width: 768px) {
+.tech-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px 12px;
+    margin: 18px 0;
+    align-items: center;
+    justify-items: center;
+}
+.tech-icons img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+.tech-icons img:hover {
+    transform: scale(1.12);
+}
+
+#tech-stack {
+    margin: 2rem 0 1rem 0;
+}
+
+@media (min-width: 1921px) {
+    body {
+        padding: 2rem 25% 0 25%;
+    }
+}
+
+@media (max-width: 900px) {
     body {
         padding: 0;
     }
@@ -198,6 +227,7 @@ body {
     .right {
         padding: 2rem 0.5rem;
         max-width: 100%;
+        min-width: 50%;
     }
 
     .left,
